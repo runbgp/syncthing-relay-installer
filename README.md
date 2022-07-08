@@ -4,7 +4,7 @@ A quick and simple script to deploy a Syncthing Relay Server on Ubuntu 20.04
 ## Usage
 Download the script and make it executable.
 ```
-wget https://git.axite.dev/axite/syncthing-relay-installer/raw/branch/main/syncthing-relay-installer.sh
+wget https://raw.githubusercontent.com/runbgp/syncthing-relay-installer/main/syncthing-relay-installer.sh
 chmod +x syncthing-relay-installer.sh
 ```
 
