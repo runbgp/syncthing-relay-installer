@@ -6,7 +6,7 @@ ARTIFACT_URL="https://github.com/syncthing/relaysrv/releases/download/$LATEST_VE
 apt update && apt -y full-upgrade
 apt clean && apt autoclean && apt autoremove
 
-apt install fail2ban
+apt -y install fail2ban
 
 ufw limit in ssh
 ufw allow in 22067/tcp

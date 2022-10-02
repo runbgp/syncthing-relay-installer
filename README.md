@@ -1,5 +1,5 @@
 # syncthing-relay-installer
-A quick and simple script to deploy a Syncthing Relay Server on Ubuntu 20.04
+A quick and simple script to deploy a Syncthing Relay Server on Ubuntu 20.04 & 22.04.
 
 ## Usage
 Download the script and make it executable.
