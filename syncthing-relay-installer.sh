@@ -3,6 +3,8 @@ LATEST_RELEASE=$(curl -L -s -H 'Accept: application/json' https://github.com/syn
 LATEST_VERSION=$(echo $LATEST_RELEASE | sed -e 's/.*"tag_name":"\([^"]*\)".*/\1/')
 ARTIFACT_URL="https://github.com/syncthing/relaysrv/releases/download/$LATEST_VERSION/strelaysrv-linux-amd64-$LATEST_VERSION.tar.gz"
 
+export DEBIAN_FRONTEND=noninteractive
+
 apt update && apt -y full-upgrade
 apt clean && apt autoclean && apt autoremove
 
@@ -41,3 +43,7 @@ rm strelaysrv-linux-amd64-$LATEST_VERSION.tar.gz
 systemctl daemon-reload
 systemctl enable relaysrv
 systemctl start relaysrv
+
+sleep 10
+
+reboot
